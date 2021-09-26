@@ -6,10 +6,23 @@ The journal version of this work is available [here](https://link.springer.com/a
 
 The preliminary usage instructions are available at the BigDebug [website](https://sites.google.com/site/sparkbigdebug/)
 
+## Summary of Titian 
+Debugging data processing logic in Data-Intensive Scalable Computing (DISC) systems
+is a difficult and time consuming effort. Today's DISC systems offer very little tooling
+for debugging programs, and as a result programmers spend countless hours collecting
+evidence (e.g., from log files) and performing trial and error debugging. To aid this
+effort, we built Titian, a library that enables data provenance---tracking data through
+transformations---in Apache Spark. Data scientists using the Titian Spark extension
+will be able to quickly identify the input data at the root cause of a potential bug
+or outlier result. Titian is built directly into the Spark platform and offers data
+provenance support at interactive speeds---orders-of-magnitude faster than alternative
+solutions---while minimally impacting Spark job performance; observed overheads for
+capturing data lineage rarely exceed 30% above the baseline job execution time.
+
 ## Team 
 
 
-This project was done in collaboration with Professor Condie, Kim and Millstein's group at UCLA. If you encounter any problems, please open an issue or feel free to contact us:
+This project was done in collaboration with Professor Condie, Kim, and Millstein's group at UCLA. If you encounter any problems, please open an issue or feel free to contact us:
 
 [Matteo Interlandi](https://interesaaat.github.io): was a postdoc at UCLA and now a Senior Scientist at Microsoft; 
 
@@ -18,6 +31,28 @@ This project was done in collaboration with Professor Condie, Kim and Millstein'
 [Tyson Condie](https://samueli.ucla.edu/people/tyson-condie/): was an Assistant Professor at UCLA, now at Microsoft 
 
 [Miryung Kim](http://web.cs.ucla.edu/~miryung/): Professor at UCLA, miryung@cs.ucla.edu;
+
+## How to cite 
+Please refer to our VLDB'16 paper, [Titian: data provenance support in Spark
+](http://web.cs.ucla.edu/~miryung/Publications/vldb2016-p301-interlandi.pdf) for more details. 
+### Bibtex  
+@article{10.14778/2850583.2850595,
+author = {Interlandi, Matteo and Shah, Kshitij and Tetali, Sai Deep and Gulzar, Muhammad Ali and Yoo, Seunghyun and Kim, Miryung and Millstein, Todd and Condie, Tyson},
+title = {Titian: Data Provenance Support in Spark},
+year = {2015},
+issue_date = {November 2015},
+publisher = {VLDB Endowment},
+volume = {9},
+number = {3},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/2850583.2850595},
+doi = {10.14778/2850583.2850595},
+journal = {Proc. VLDB Endow.},
+month = nov,
+pages = {216–227},
+numpages = {12}
+}
+[DOI Link](https://doi.org/10.14778/2850583.2850595)
 
 ## Apache Spark
 
